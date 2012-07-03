@@ -13,7 +13,7 @@
 
 	<meta name="viewport" content="width=device-width">
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 
 	<script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
@@ -36,12 +36,14 @@
 <div class="contenedor_rotador">
 	<div id="slides">
 				<div class="slides_container">
-					<a href="#" title="título slide 1" target="_blank"><img src="img/slide-1.jpg" width="960" height="174" alt="Slide 1"></a>
-                    <a href="#" title="título slide 2" target="_blank"><img src="img/slide-2.jpg" width="960" height="174" alt="Slide 2"></a>
-                    <a href="#" title="título slide 3" target="_blank"><img src="img/slide-3.jpg" width="960" height="174" alt="Slide 3"></a> 
+					<a href="#" title="título slide 1" target="_blank"><img src="img/slide-1.jpg" width="553" height="174" alt="Slide 1"></a>
+                    <a href="#" title="título slide 2" target="_blank"><img src="img/slide-2.jpg" width="553" height="174" alt="Slide 2"></a>
+                    <a href="#" title="título slide 3" target="_blank"><img src="img/slide-3.jpg" width="553" height="174" alt="Slide 3"></a>
 	  </div><!-- termina .slides_container-->
-                   
+
 	</div><!-- termina #slides-->
+ <aside class="partner"><img src="img/img_partner.jpg" width="407" height="174" alt="partner_seix_capital_humano"></aside>
+<div class="clear"></div>
 </div><!-- termina .contenedor_rotador-->
 <div class="columna_izquierda">
 <article id="beneficios">
@@ -119,7 +121,7 @@
 
 </div><!-- termina #wrapper_main-->
 <footer role="contentinfo">
-Contactos DATAiFX: contact@dataifx.com (57+1) 7441912 - Ext 218 Contactos Seix: info@seix.org (57+1) 2565657 / 97 
+Contactos DATAiFX: contact@dataifx.com (57+1) 7441912 - Ext 218 Contactos Seix: info@seix.org (57+1) 2565657 / 97
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
