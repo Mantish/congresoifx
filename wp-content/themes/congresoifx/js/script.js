@@ -1,18 +1,21 @@
-/* Author: Orman Clark 
+/* Author: Orman Clark
 Name: sildes.js
 */
 $(function(){
-			$('#slides').slides({
-				preload: true,
-				preloadImage: 'img/loading.gif',
-				play: 5500,
-				pause: 3000,
-				hoverPause: true
-				
-			});
-		});
-		
-/* Author: bxCreative 
+
+    var loading_img = $('body').attr('data-themeurl') + '/img/loading.gif';
+
+	$('#slides').slides({
+		preload: true,
+		preloadImage: loading_img,
+		play: 5500,
+		pause: 3000,
+		hoverPause: true
+
+	});
+});
+
+/* Author: bxCreative
 Name: bxSlider-jQuery HTML Content Slider
 */
 
@@ -21,33 +24,33 @@ $(function(){
     displaySlideQty: 3,
     moveSlideQty: 1
   });
-}); 
+});
 
 
-/* Author: @thefancyapps 
+/* Author: @thefancyapps
 Name: fancybox
 */
 $(function(){
 		$(".fancybox").fancybox();
 });
-  
 
 
-/* Author: danielstocks 
+
+/* Author: danielstocks
 Name: jQuery-Collapse
 */
 $(".acordeon").collapse({show: function(){
                     this.animate({
-                        opacity: 'toggle', 
+                        opacity: 'toggle',
                         height: 'toggle'
                     }, 300);
                 },
                 hide : function() {
-                    
+
                     this.animate({
-                        opacity: 'toggle', 
+                        opacity: 'toggle',
                         height: 'toggle'
                     }, 300);
                 }
             });
-           
+

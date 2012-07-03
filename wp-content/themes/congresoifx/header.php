@@ -22,7 +22,7 @@
 	wp_head();
 ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> data-themeurl="<?php echo get_bloginfo('template_directory');?>">
 <!--[if lt IE 7]><p class=chromeframe>¡Su navegador es <em>muy antiguo!</em> <a href="http://browsehappy.com/">Mejore su experiencia en la web actualizando su navegador</a> ó <a href="http://www.google.com/chromeframe/?redirect=true">instale Google Chrome Frame</a> para navegar este sitio.</p><![endif]-->
 <div id="wrapper_main">
 <header id="header_main">

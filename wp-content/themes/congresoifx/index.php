@@ -3,13 +3,13 @@
 <div class="contenedor_rotador">
 	<div id="slides">
 				<div class="slides_container">
-					<a href="#" title="título slide 1" target="_blank"><img src="img/slide-1.jpg" width="553" height="174" alt="Slide 1"></a>
-                    <a href="#" title="título slide 2" target="_blank"><img src="img/slide-2.jpg" width="553" height="174" alt="Slide 2"></a>
-                    <a href="#" title="título slide 3" target="_blank"><img src="img/slide-3.jpg" width="553" height="174" alt="Slide 3"></a>
+					<a href="#" title="título slide 1" target="_blank"><img src="<?php echo get_bloginfo('template_directory');?>/img/slide-1.jpg" width="553" height="174" alt="Slide 1"></a>
+                    <a href="#" title="título slide 2" target="_blank"><img src="<?php echo get_bloginfo('template_directory');?>/img/slide-2.jpg" width="553" height="174" alt="Slide 2"></a>
+                    <a href="#" title="título slide 3" target="_blank"><img src="<?php echo get_bloginfo('template_directory');?>/img/slide-3.jpg" width="553" height="174" alt="Slide 3"></a>
 	  </div><!-- termina .slides_container-->
 
 	</div><!-- termina #slides-->
- <aside class="partner"><img src="img/img_partner.jpg" width="407" height="174" alt="partner_seix_capital_humano"></aside>
+ <aside class="partner"><img src="<?php echo get_bloginfo('template_directory');?>/img/img_partner.jpg" width="407" height="174" alt="partner_seix_capital_humano"></aside>
 <div class="clear"></div>
 </div><!-- termina .contenedor_rotador-->
 <div class="columna_izquierda">
