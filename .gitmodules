@@ -1,0 +1,3 @@
+[submodule "wp-content/plugins/kc-essentials"]
+	path = wp-content/plugins/kc-essentials
+	url = git://github.com/kucrut/kc-essentials.git
