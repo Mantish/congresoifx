@@ -45,30 +45,28 @@
 </article><!-- termina #agenda_academica-->
 </div><!-- termina .columna_izquierda-->
 <div class="columna_derecha">
+
 <aside id="destacados">
-<h1>DESTACADOS</h1>
-<article class="noticia_destacada">
-<h2>Concluye Congreso DATAiFX 2011</h2>
-<img class="thumb_noticia" src="img/img_noticia.jpg" width="101" height="87" alt="imagen_noticia_destacada">
-<p>El excedente en Colombia de por lo menos 150 millones de pies cúbicos diarios de gas debería canalizarse hacia las termoeléctricas, que abaratarían su producción en un 30%. <a href="#">(+)</a></p>
-<div class="clear"></div>
-</article><!-- termina .noticia_destacada-->
-<article class="noticia_destacada">
-<h2>Acá va otro destacado también del congreso DATAiFX 2011</h2>
-<p>El excedente en Colombia de por lo menos 150 millones de pies cúbicos diarios de gas debería canalizarse hacia las termoeléctricas, que abaratarían su producción en un 30%. <a href="#">(+)</a></p>
-</article><!-- termina .noticia_destacada-->
-<article class="noticia_destacada">
-<h2>Acá va otro destacado también del congreso DATAiFX 2011</h2>
-<p>El excedente en Colombia de por lo menos 150 millones de pies cúbicos diarios de gas debería canalizarse hacia las termoeléctricas, que abaratarían su producción en un 30%. <a href="#">(+)</a></p>
-</article><!-- termina .noticia_destacada-->
-<div id="paginador">
-<ul>
-<li><a class="active" href="#">1</a></li>
-<li><a href="#">2</a></li>
-<li><a href="#">3</a></li>
-</ul>
-</div><!-- termina #paginador-->
+	<h1>DESTACADOS</h1>
+
+	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+	<article class="noticia_destacada">
+		<h2><?php the_title(); ?></h2>
+		<?php the_post_thumbnail('home-thumb', array('class' => 'thumb_noticia')); ?>
+		<?php the_content('(+)'); ?>
+		<div class="clear"></div>
+	</article><!-- termina .noticia_destacada-->
+	<?php endwhile; ?>
+
+	<div id="paginador">
+		<ul>
+			<li><a class="active" href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+		</ul>
+	</div><!-- termina #paginador-->
 </aside><!-- termina #destacados-->
+
 <aside id="promo">
   <img src="img/img_promo.jpg" width="365" height="164" alt="promo"> </aside>
 </div><!-- termina .columna_derecha-->

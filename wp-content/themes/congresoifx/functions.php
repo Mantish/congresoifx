@@ -1,5 +1,7 @@
 <?php
 add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size(135, 135, true);
+add_image_size( 'home-thumb', 100, 100 );
 
 //jquery desde google cdn
 function my_jquery()
