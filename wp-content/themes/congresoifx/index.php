@@ -50,7 +50,7 @@
 </aside><!-- termina #destacados-->
 
 <aside id="promo">
-	<img src="img/img_promo.jpg" width="365" height="164" alt="promo">
+	<?php dynamic_sidebar( 'primary-widget-area' ); ?>
 </aside>
 </div><!-- termina .columna_derecha-->
 <div class="clear"></div>

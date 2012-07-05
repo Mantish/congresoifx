@@ -27,7 +27,8 @@
 <p>TRADERS, inversionistas, comisionistas de bolsa, jefes de mesas de dinero, directores de banca inversión, directores de carteras colectivas, administradores de inversiones,  tesoreros de compañías, gerentes financieros, directores de riesgos, analistas financieros, operadores del mercado, entre otros.</p>
 </article><!-- termina #dirigido-->
 <aside id="promo">
-  <img src="img/img_promo.jpg" width="365" height="164" alt="promo"> </aside>
+	<?php dynamic_sidebar( 'primary-widget-area' ); ?>
+</aside>
 </div><!-- termina .columna_derecha-->
 <div class="clear"></div>
 

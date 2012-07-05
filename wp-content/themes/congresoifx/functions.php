@@ -38,3 +38,18 @@ function create_post_types()
 	));
 }
 add_action('init', 'create_post_types');
+
+//registrar zonas de widgets
+function create_widget_zones()
+{
+	register_sidebar( array(
+		'name' => 'Area Principal Widgets',
+		'id' => 'primary-widget-area',
+		'description' => 'Para el home page y paginas normales',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+}
+add_action( 'widgets_init', 'create_widget_zones' );
