@@ -335,6 +335,14 @@ article {
 	padding-bottom: 20px;
 }
 
+article.page h1{
+	overflow: hidden;
+	padding-top: 20px;
+}
+article.page h1:first-child{
+	padding: 0;
+}
+
 
 
 article blockquote {
@@ -383,14 +391,14 @@ iframe {
 
 }
 
-#caracteristicas ul {
+article.page ul {
 	float: left;
 	padding: 0px;
 	width: 250px;
 	margin: 0px;
 }
 
-#caracteristicas ul li {
+article.page ul li {
 	font-size: 1em;
 	padding-bottom: 6px;
 	color: #186080;
