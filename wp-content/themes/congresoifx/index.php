@@ -71,24 +71,5 @@
   <img src="img/img_promo.jpg" width="365" height="164" alt="promo"> </aside>
 </div><!-- termina .columna_derecha-->
 <div class="clear"></div>
-<div class="full_width">
-<article id="patrocinadores">
-<h1>PATROCINADORES 2011</h1>
-<ul>
-<li><a href="http://www.pristinelatin.com/" target="_blank"><img src="img/P_Pristine.png" alt="pristine" title="pristine.com" width="131" height="65" border="0"></a></li>
-<li><a href="http://www.contourgloballatam.com/5138" target="_blank"><img src="img/P_GlobalCont.png" alt="contour_global" title="contourgloballatam.com" width="170" height="80" border="0"></a></li>
-<li><a href="http://www.isagen.com.co/" target="_blank"><img src="img/P_isagen.png" alt="isagen" title="isagen.com.co" width="150" height="48" border="0"></a></li>
-<li><a href="http://www.derivex.com.co" target="_blank"><img src="img/P_Derivex.png" alt="derivex" title="derivex.com.co" width="149" height="65" border="0"></a></li>
-<li><a href="https://www.correval.com/" target="_blank"><img src="img/P_correval.png" alt="correval_e_trading" title="correval.com" width="152" height="65" border="0"></a></li>
-<li><a href="http://www.corredores.com" target="_blank"><img src="img/P_corredores.png" alt="corredores_asociados" title="corredores.com" width="166" height="71" border="0"></a></li>
-<li><a href="http://www.edutrade.com/ES/" target="_blank"><img src="img/P_Edutrade.png" alt="edutrade" title="edutrade.com" width="120" height="71" border="0"></a></li>
-<li><a href="http://www.globaleducation.com/global/" target="_blank"><img src="img/P_Global.png" alt="global_education" title="globaleducation.com" width="156" height="65" border="0"></a></li>
-<li><a href="http://www.reditum.com" target="_blank"><img src="img/P_Reditum.png" alt="reditum" title="reditum.com" width="101" height="71" border="0"></a></li>
-<li><img src="img/P_rtm.png" width="136" height="65" alt="treasury_management"></li>
-<li><a href="http://www.migtic.com/" target="_blank"><img src="img/P_Migtic.png" alt="migtic" title="migtic.com" width="182" height="71" border="0"></a></li>
-<li><a href="http://www.aden.org/" target="_blank"><img src="img/P_Aden.png.jpg" alt="aden" title="aden.org" width="136" height="65" border="0"></a></li>
-</ul>
-</article><!-- termina #patrocinadores-->
-</div><!-- termina .full_width-->
 
 <?php get_footer(); ?>
