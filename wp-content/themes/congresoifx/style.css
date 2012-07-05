@@ -336,7 +336,7 @@ article {
 }
 
 article.page h1{
-	overflow: hidden;
+	clear: both;
 	padding-top: 20px;
 }
 article.page h1:first-child{
@@ -407,7 +407,7 @@ article.page ul li {
 	list-style-image: url(img/bullet.jpg);
 }
 
-.llamado  {
+article.page blockquote p {
 	float: right;
 	width: 250px;
 	margin-top: 7px;
@@ -417,8 +417,7 @@ article.page ul li {
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #e75e34;
-	font-family: 'OpenSansCondensedLightItalic', Helvetica, Arial,     sans-serif;
-	font-size: 1.5em;
+	font-family: 'OpenSansCondensedLightItalic', Helvetica, Arial, sans-serif;
 	color: #e75e34;
 	text-align: center;
 	padding-top: 5px;
