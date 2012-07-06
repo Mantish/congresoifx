@@ -52,6 +52,33 @@ function my_connection_types() {
 }
 add_action( 'wp_loaded', 'my_connection_types' );
 
+add_filter( 'kc_post_settings', 'slider_options' );
+function slider_options( $groups ) {
+	$my_group = array(
+		'slide'	=> array(		// Post type name
+			array(
+				'id'		=> 'slider_section',
+				'title'		=> 'Opciones Rotador',
+				'role'		=> array('administrator', 'editor'),
+				'fields'	=> array(
+					array(
+						'id'		=> 'slide_in',
+						'title'		=> 'Rotador disponible en',
+						'type'		=> 'checkbox',
+						'options'	=> array(
+							'home'	=> 'Home'
+						),
+						'default'	=> 'home'
+					)
+				)
+			)
+		)
+	);
+
+	$groups[] = $my_group;
+	return $groups;
+}
+
 //registrar zonas de widgets
 function create_widget_zones()
 {
