@@ -39,6 +39,19 @@ function create_post_types()
 }
 add_action('init', 'create_post_types');
 
+function my_connection_types() {
+	// Make sure the Posts 2 Posts plugin is active.
+	if ( !function_exists( 'p2p_register_connection_type' ) )
+		return;
+
+	p2p_register_connection_type( array(
+		'name' => 'slides_to_pages',
+		'from' => 'slide',
+		'to' => 'page'
+	) );
+}
+add_action( 'wp_loaded', 'my_connection_types' );
+
 //registrar zonas de widgets
 function create_widget_zones()
 {
