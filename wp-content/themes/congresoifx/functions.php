@@ -39,6 +39,7 @@ function create_post_types()
 }
 add_action('init', 'create_post_types');
 
+//todo esto es para poder ponerle al slide en donde va
 function my_connection_types() {
 	// Make sure the Posts 2 Posts plugin is active.
 	if ( !function_exists( 'p2p_register_connection_type' ) )
@@ -77,6 +78,48 @@ function slider_options( $groups ) {
 
 	$groups[] = $my_group;
 	return $groups;
+}
+//
+
+
+//opciones del tema, para el home page
+add_filter( 'kc_plugin_settings', 'mytheme_options' );
+function mytheme_options( $settings ) {
+	$options = array(
+		array(
+			'id'     => 'home_options',
+			'title'  => 'Opciones Home Page',
+			'fields' => array(
+				array(
+					'id'      => 'beneficios',
+					'title'   => 'Beneficios',
+					'type'    => 'editor'
+				),
+				array(
+					'id'      => 'agenda',
+					'title'   => 'Agenda',
+					'type'    => 'editor'
+				)
+			)
+		),
+		// You can add more sections here...
+	);
+
+	$my_settings = array(
+		'prefix'        => 'ifx',    // Use only alphanumerics, dashes and underscores here!
+		'menu_location' => 'themes.php',  // options-general.php | index.php | edit.php | upload.php | link-manager.php | edit-comments.php | themes.php | users.php | tools.php
+		'menu_title'    => 'Opciones Generales',
+		'page_title'    => 'Opciones Generales',
+		'display'       => 'metabox',     // plain|metabox. If you chose to use metabox, don't forget to set their settings too
+		'metabox'       => array(
+			'context'   => 'normal',  // normal | advanced | side
+			'priority'  => 'default', // default | high | low
+		),
+		'options'       => $options
+	);
+
+	$settings[] = $my_settings;
+	return $settings;
 }
 
 //registrar zonas de widgets

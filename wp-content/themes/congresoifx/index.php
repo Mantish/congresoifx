@@ -24,29 +24,18 @@
 </div><!-- termina .contenedor_rotador-->
 
 <div class="columna_izquierda">
-<article id="beneficios">
-<h1>BENEFICIOS</h1>
-<iframe src="http://player.vimeo.com/video/44658040" width="535" height="301" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-<blockquote>
-<p>"El evento ha sido diseñado para ofrecer a los traders una herramienta enriquecedora en los temas concernientes a la actividad del trading"</p>
-</blockquote>
-</article><!-- termina #beneficios-->
-<article id="agenda_academica">
-<h1>AGENDA ACADÉMICA</h1>
-<ul>
-<li>- Money Management</li>
-<li>- Análisis Fundamental</li>
-<li>- Análisis Técnico</li>
-<li>- E-trading</li>
-</ul>
-<ul>
-<li>- Tendencias tecnológicas</li>
-<li>- Panel Estratégico de Trading</li>
-<li>- Sicología del trading</li>
-<li>- Laboratorio de estrategias</li>
-</ul>
-<div class="clear"></div>
-</article><!-- termina #agenda_academica-->
+	<article id="beneficios">
+		<?php
+		$benefits = kc_get_option( 'ifx', 'home_options', 'beneficios' );
+		echo apply_filters('the_content', $benefits);
+		?>
+	</article><!-- termina #beneficios-->
+	<article id="agenda_academica">
+		<?php
+		$agenda = kc_get_option( 'ifx', 'home_options', 'agenda' );
+		echo apply_filters('the_content', $agenda);
+		?>
+	</article><!-- termina #agenda_academica-->
 </div><!-- termina .columna_izquierda-->
 
 <div class="columna_derecha">
