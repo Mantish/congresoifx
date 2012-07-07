@@ -16,6 +16,10 @@
 
 		var init = function()
 		{
+			$('#tabs-wrap .page').hide();
+			var activeTab = $('#paginador li.active a').attr("href");
+			$(activeTab).show();
+
 			$('aside').on('click', '#paginador li:not(.active) a', changeTab);
 		}
 
