@@ -542,21 +542,18 @@ article.page blockquote p {
 	padding-left: 20px;
 	padding-top: 0px;
 }
-#caja_carrusel {
-	margin-bottom: 20px;
-}
-#caja_carrusel #slider1 li {
-	margin-right: 5px;
+
+.columna_izquierda .gallery-item {
+	margin: 0 5px 0 0;
 	width: 150px;
-	list-style-type: none;
 }
-#caja_carrusel .bx-wrapper {
+.columna_izquierda .bx-wrapper {
 	width: 535px;
 	padding-right: 17px;
 	padding-left: 37px;
 }
 
-#caja_carrusel .bx-next {
+.columna_izquierda .bx-next {
 	background-image: url(img/btn_carrusel_right.png);
 	height: 31px;
 	right: -30px;
@@ -565,7 +562,7 @@ article.page blockquote p {
 	top: 50px;
 	width: 31px;
 }
-#caja_carrusel .bx-prev {
+.columna_izquierda .bx-prev {
 	background-image: url(img/btn_carrusel_left.png);
 	height: 31px;
 	left: -5px;

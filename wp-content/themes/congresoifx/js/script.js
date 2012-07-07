@@ -20,7 +20,7 @@ Name: bxSlider-jQuery HTML Content Slider
 */
 
 $(function(){
-  $('#slider1').bxSlider({
+  $('.gallery-row').bxSlider({
     displaySlideQty: 3,
     moveSlideQty: 1
   });
