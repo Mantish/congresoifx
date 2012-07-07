@@ -19,6 +19,7 @@
 <?php
 	wp_enqueue_script('plugins', get_bloginfo('template_directory').'/js/plugins.js', array('jquery'), '', true);
 	wp_enqueue_script('script', get_bloginfo('template_directory').'/js/script.js', array('jquery'), '', true);
+	wp_enqueue_script('tabs_nav', get_bloginfo('template_directory').'/js/tabs_nav.js', array('jquery'), '', true);
 	wp_head();
 ?>
 </head>

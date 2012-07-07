@@ -518,13 +518,13 @@ article.page blockquote p {
 	display: inline;
 	padding-left: 15px;
 }
-#paginador ul li .active {
+#paginador ul li.active a {
 	background-color: #29abe2;
 	color: #FFF;
 	padding-right: 5px;
 	padding-left: 5px;
 }
-#paginador ul li .active:hover {
+#paginador ul li.active a:hover {
 	background-color: #E75E34;
 	color: #FFF;
 	padding-right: 5px;
