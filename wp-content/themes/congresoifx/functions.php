@@ -70,6 +70,11 @@ function slider_options( $groups ) {
 							'home'	=> 'Home'
 						),
 						'default'	=> 'home'
+					),
+					array(
+						'id'		=> 'slide_link',
+						'title'		=> 'URL Enlace',
+						'type'		=> 'text',
 					)
 				)
 			)

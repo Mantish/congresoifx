@@ -9,8 +9,9 @@
 		while ( $query_slider->have_posts() ) : $query_slider->the_post();
 			$slide_in = get_post_meta( get_the_ID(), '_slide_in', true );
 			if ( $slide_in && in_array('home', $slide_in) ){
+				$link = get_post_meta( get_the_ID(), '_slide_link', true );
 		?>
-			<a href="#" title="<?php the_title(); ?>"><?php the_post_thumbnail('full'); ?></a>
+			<a href="<?php echo $link; ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('full'); ?></a>
 		<?php
 			}
 		endwhile;
