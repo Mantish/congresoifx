@@ -156,34 +156,30 @@ td { vertical-align: top; }
 	display: inline;
 	background-image: url(img/separador_nav.png);
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: left;
 	padding-top: 6px;
 	padding-bottom: 6px;
-	padding-right: 25px;
-	padding-left: 15px;
+	padding-right: 15px;
+	padding-left: 25px;
 	font-family: 'OpenSansCondensedLight', Helvetica, Arial,     sans-serif;
 	text-shadow: 2px 2px 2px #000000;
 	filter: dropshadow(color=#000000, offx=2, offy=2);
 	font-size: 1.2em;
 }
-#nav_main ul #primero {
-
-
-}
-
-#nav_main ul #ultimo {
+#nav_main li:first-child {
 	background-image: none;
 }
 
 #nav_main ul li a {
 	color: #FFF;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 #nav_main ul li a:hover {
 	color: #f69221;
 	text-decoration: underline;
 }
-#nav_main ul li .active  {
+#nav_main ul li.current-menu-item a {
 	color: #f69221;
 }
 

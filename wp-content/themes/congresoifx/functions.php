@@ -4,8 +4,12 @@ function mytheme_setup()
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size(135, 135, true);
 	add_image_size( 'home-thumb', 100, 100 );
+
+	register_nav_menus( array(
+		'primary' => 'Menú Principal',
+	) );
 }
-add_action( 'init', 'mytheme_setup' );
+add_action( 'after_setup_theme', 'mytheme_setup' );
 
 //jquery desde google cdn
 function my_jquery()

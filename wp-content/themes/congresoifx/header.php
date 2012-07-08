@@ -26,16 +26,12 @@
 <body <?php body_class(); ?> data-themeurl="<?php echo get_bloginfo('template_directory');?>">
 <!--[if lt IE 7]><p class=chromeframe>¡Su navegador es <em>muy antiguo!</em> <a href="http://browsehappy.com/">Mejore su experiencia en la web actualizando su navegador</a> ó <a href="http://www.google.com/chromeframe/?redirect=true">instale Google Chrome Frame</a> para navegar este sitio.</p><![endif]-->
 <div id="wrapper_main">
-<header id="header_main">
-</header><!-- termina #header_main-->
-<nav id="nav_main">
-<ul>
-<li id="primero"><a class="active" href="index.html">INICIO</a></li>
-<li><a href="programa_academico.html">PROGRAMA ACADÉMICO</a></li>
-<li><a href="conferencistas.html">CONFERENCISTAS</a></li>
-<li><a href="generalidades.html">GENERALIDADES</a></li>
-<li><a href="patrocinadores.html">PATROCINADORES</a></li>
-<li><a href="registro.html">REGISTRO</a></li>
-<li id="ultimo"><a href="contacto.html">CONTACTO</a></li>
-</ul>
-</nav><!-- termina #nav_main-->
+	<header id="header_main">
+	</header><!-- termina #header_main-->
+	<?php
+	wp_nav_menu( array(
+		'container' => 'nav',
+		'theme_location' => 'primary',
+		'container_id' => 'nav_main',
+	) );
+	?>
