@@ -55,8 +55,13 @@
 		?>
 			<article class="noticia_destacada">
 				<h2><?php the_title(); ?></h2>
-				<?php the_post_thumbnail('home-thumb', array('class' => 'thumb_noticia')); ?>
-				<?php the_content('(+)'); ?>
+				<?php
+				the_post_thumbnail('home-thumb', array('class' => 'thumb_noticia'));
+				$content = get_the_content();
+				$link = get_post_meta( get_the_ID(), '_ext_link', true );
+				$content .= ' <a href="' .$link. '" target="_blank">(+)</a>';
+				echo apply_filters('the_content', $content);
+				?>
 				<div class="clear"></div>
 			</article><!-- termina .noticia_destacada-->
 		<?php

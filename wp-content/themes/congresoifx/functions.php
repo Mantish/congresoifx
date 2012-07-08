@@ -122,6 +122,30 @@ function mytheme_options( $settings ) {
 	return $settings;
 }
 
+//opciones entradas (destacados)
+add_filter( 'kc_post_settings', 'post_options' );
+function post_options( $groups ) {
+	$my_group = array(
+		'post'	=> array(		// Post type name
+			array(
+				'id'		=> 'kc_post_section',
+				'title'		=> 'Opciones Destacados',
+				'role'		=> array('administrator', 'editor'),
+				'fields'	=> array(
+					array(
+						'id'		=> 'ext_link',
+						'title'		=> 'URL Enlace',
+						'type'		=> 'text',
+					)
+				)
+			)
+		)
+	);
+
+	$groups[] = $my_group;
+	return $groups;
+}
+
 //registrar zonas de widgets
 function create_widget_zones()
 {
