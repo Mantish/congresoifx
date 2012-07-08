@@ -825,6 +825,7 @@ article.page blockquote p {
 	margin-bottom: 0px;
 }
 .acordeon {
+	margin-top: -20px;
 }
 .acordeon h3 {
 	line-height:1;
