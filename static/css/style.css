@@ -991,6 +991,43 @@ iframe {
 	float: left;
 	margin-left: 70px;
 }
+.contenedor_contacto {
+	height: 500px;
+	width: 650px;
+	padding: 20px;
+	color: #6C6C6C;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+}
+
+.campo_contacto {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 280px;
+	text-align: right;
+	font-size: 0.9em;
+}
+.campo_comentarios {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	text-align: left;
+	font-size: 0.9em;
+	padding-left: 8px;
+}
+
+#comentarios {
+	width: 265px;
+	height: 180px;
+}
+.contenedor_btn_enviar {
+	margin-top: 173px;
+}
+
+
+
 
 
 
