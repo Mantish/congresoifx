@@ -31,7 +31,8 @@ $(function(){
 Name: fancybox
 */
 $(function(){
-		$(".fancybox").fancybox();
+    $(".fancybox").fancybox();
+    $(".menu-item:last-child a").fancybox();
 });
 
 

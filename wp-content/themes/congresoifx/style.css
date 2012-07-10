@@ -1002,8 +1002,7 @@ article.page blockquote p {
 	margin-left: 70px;
 }
 
-.contenedor_contacto {
-	height: 500px;
+#contenedor_contacto {
 	width: 650px;
 	padding: 20px;
 	color: #6C6C6C;
