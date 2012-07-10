@@ -18,26 +18,7 @@ Contactos DATAiFX: contact@dataifx.com (57+1) 7441912 - Ext 218 Contactos Seix: 
 <div class="hidden">
 <div id="contenedor_contacto">
 	<h1>CONTACTO</h1>
-	<p>Por favor diligencie este formulario. En breve estaremos en contacto con usted. También puede contactarnos en el teléfono 256 5657 en Bogotá.</p>
-	<div class="campo_contacto" >
-		nombre completo* <input name="" type="text">
-	</div>
-	<div class="campo_contacto" >
-		empresa* <input name="" type="text">
-	</div>
-	<div class="campo_contacto" >
-		correo electrónico* <input name="" type="text">
-	</div>
-	<div class="campo_contacto" >
-		teléfono <input name="" type="text">
-	</div>
-	<div class="clear"></div>
-	<div class="campo_comentarios" >
-		comentarios <textarea id="comentarios" name="" cols="" rows=""></textarea>
-	</div>
-	<div class="contenedor_btn_enviar">
-		<a href="#" target="_blank"><div class="btn_azul">ENVIAR</div></a>
-	</div>
+	<?php echo do_shortcode('[contact-form-7 title="Formulario de contacto 1"]'); ?>
 	<div class="clear"></div>
 </div>
 </div>
