@@ -44,26 +44,23 @@
 </div><!-- termina .columna_izquierda-->
 
 <div class="columna_derecha">
-<aside id="beneficios_naranja">
-<h1>BENEFICIOS</h1>
-<article id="lista_beneficios">
-<ul>
-<li>Mejorar las herramientas para tomar las mejores decisiones de trading.</li>
-<li>Aprender estrategias específicas de trading de expertos nacionales e internacionales.</li>
-<li>Socializar e intercambiar conocimientos y conceptos con otros traders.</li>
-<li>Adquirir una perspectiva macro de los mercados aplicada al trading.</li>
-<li>Una gran oportunidad para aprender y compartir con expertos reconocidos.</li>
-<li>Alto retorno de la inversión.</li>
-</ul>
-</article><!-- termina #beneficios_naranja-->
-</aside><!-- termina #lista_beneficios-->
-<article id="dirigido">
-<h1>ESTÁ DIRIGIDO A:</h1>
-<p>TRADERS, inversionistas, comisionistas de bolsa, jefes de mesas de dinero, directores de banca inversión, directores de carteras colectivas, administradores de inversiones,  tesoreros de compañías, gerentes financieros, directores de riesgos, analistas financieros, operadores del mercado, entre otros.</p>
-</article><!-- termina #dirigido-->
-<aside id="promo">
-	<?php dynamic_sidebar( 'primary-widget-area' ); ?>
-</aside>
+	<aside id="beneficios_naranja">
+		<?php
+		$benefits_orange = get_post_meta( get_the_ID(), '_sidebar_top_text', true );
+		echo apply_filters('the_content', $benefits_orange);
+		?>
+	</aside><!-- termina #lista_beneficios-->
+
+	<aside class="above_widgets">
+		<?php
+		$side_text = get_post_meta( get_the_ID(), '_sidebar_text', true );
+		echo apply_filters('the_content', $side_text);
+		?>
+	</aside>
+
+	<aside id="promo">
+		<?php dynamic_sidebar( 'primary-widget-area' ); ?>
+	</aside>
 </div><!-- termina .columna_derecha-->
 <div class="clear"></div>
 

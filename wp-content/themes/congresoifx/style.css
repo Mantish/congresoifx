@@ -454,17 +454,17 @@ article.page blockquote p {
 	color: #e75e34;
 	border-bottom-color: #e75e34;
 }
-#lista_beneficios {
+#beneficios_naranja ul{
 	background-color: #b4c0c5;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #cccccc;
 	padding-top: 19px;
 	padding-right: 15px;
-	padding-bottom: 0px;
+	padding-bottom: 6px;
 	padding-left: 15px;
 }
-#lista_beneficios ul li {
+#beneficios_naranja ul li {
 	font-size: 1em;
 	padding-bottom: 6px;
 	color: #093D4F;
@@ -802,23 +802,24 @@ article.page blockquote p {
 	background: #000;
 	background: rgba(0, 0, 0, .8);
 }
-#video_lateral {
+.above_widgets {
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
 
-#video_lateral .llamado {
+.above_widgets blockquote{
+	margin: 0;
+}
+.above_widgets blockquote p{
+	border: none;
+	color: #e75e34;
 	float: none;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-	padding: 0px;
-	margin-top: 10px;
-	margin-right: 0px;
-	margin-left: 0px;
+	font-family: 'OpenSansCondensedLightItalic', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	margin: 10px 0 0;
+	padding: 0;
+	text-align: center;
 	width: auto;
-	margin-bottom: 0px;
 }
 .acordeon {
 	margin-top: -20px;

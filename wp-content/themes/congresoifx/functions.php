@@ -159,6 +159,37 @@ function post_options( $groups ) {
 	return $groups;
 }
 
+//opciones entradas (destacados)
+add_filter( 'kc_post_settings', 'page_options' );
+function page_options( $groups ) {
+	$my_group = array(
+		'page'	=> array(		// Post type name
+			array(
+				'id'		=> 'kc_page_section',
+				'title'		=> 'Opciones Páginas',
+				'role'		=> array('administrator', 'editor'),
+				'fields'	=> array(
+					array(
+						'id'		=> 'sidebar_text',
+						'title'		=> 'Texto Barra Lateral',
+						'desc'		=> 'Encima de los widgets',
+						'type'		=> 'editor',
+					),
+					array(
+						'id'		=> 'sidebar_top_text',
+						'title'		=> 'Texto Beneficios',
+						'desc'		=> 'Página generalidades',
+						'type'		=> 'editor',
+					)
+				)
+			)
+		)
+	);
+
+	$groups[] = $my_group;
+	return $groups;
+}
+
 //registrar zonas de widgets
 function create_widget_zones()
 {
