@@ -949,10 +949,10 @@ article.page blockquote p {
 		#154d60 0%,
 		#5aa9c4);
 	background: -webkit-gradient(
-		linear, left top, left bottom, 
+		linear, left top, left bottom,
 		from(#154d60),
 		to(#5aa9c4));
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#154d60', endColorstr='#5aa9c4');	
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#154d60', endColorstr='#5aa9c4');
 	border-radius: 0px;
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
@@ -986,7 +986,7 @@ article.page blockquote p {
 }
 /*fin estilos conferencistas*/
 /*estilos programa académico*/
-.dia {
+.program h1 {
 	border:none;
 	background-color: #186080;
 	color: #FFF;
@@ -996,7 +996,7 @@ article.page blockquote p {
 	padding-left: 10px;
 	margin: 0px;
 }
-.items_programa {
+.program blockquote {
 	border-top-width: 1px;
 	border-top-style: solid;
 	border-top-color: #FFF;
@@ -1004,35 +1004,26 @@ article.page blockquote p {
 	border-bottom-style: solid;
 	border-bottom-color: #FFF;
 	background-color: #186080;
-	color: #FFF;
 	font-size: 0.9em;
+	margin: 0;
 	padding-top: 7px;
 	padding-right: 10px;
 	padding-bottom: 7px;
 	padding-left: 10px;
 }
-.items_programa ul {
-	margin: 0px;
-	padding: 0px;
+.program blockquote ul {
+	border: none;
+	color: #FFF;
+	font-size: 1em;
 	list-style-type: none;
-}
-.items_programa ul li {
-	display: block;
-	padding: 0px;
-	width: 220px;
 	margin: 0px;
-	float: left;
+	padding: 0px;
 }
-.items_programa ul .item_pequeno {
-	width: 150px;
-}
-.items_programa ul .item_tema {
-	width: 350px;
-}
-.tema {
+.program h3 {
 	background-color: #E6E6E6;
 	color: #186080;
 	font-size: 0.8em;
+	margin: 0;
 	padding-top: 10px;
 	padding-right: 10px;
 	padding-bottom: 10px;
@@ -1042,33 +1033,32 @@ article.page blockquote p {
 	border-bottom-style: solid;
 	border-bottom-color: #CCC;
 }
-.texto_programa {
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
+
+.program ul {
 	border-bottom-color: #CCC;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
 	color: #666;
 	font-size: 0.8em;
-	padding-top: 7px;
-	padding-right: 10px;
+	list-style-type: none;
+	margin: 0px;
+	overflow: hidden;
 	padding-bottom: 7px;
 	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 7px;
 }
-.texto_programa ul {
-	margin: 0px;
-	padding: 0px;
-	list-style-type: none;
-}
-.texto_programa ul li {
+.program ul li {
 	display: block;
 	padding: 0px;
-	width: 220px;
+	width: 200px;
 	margin: 0px;
 	float: left;
 }
-.texto_programa ul .item_pequeno {
+.program ul li:first-child {
 	width: 150px;
 }
-.texto_programa ul .item_tema {
+.program ul li:nth-child(2) {
 	width: 350px;
 }
 /*fin estilos programa académico*/
