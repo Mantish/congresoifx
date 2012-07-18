@@ -32,7 +32,7 @@ Name: fancybox
 */
 $(function(){
     $(".fancybox").fancybox();
-    $(".menu-item:last-child a").fancybox();
+    $('.menu-item:last-child a, a[href*="#contenedor_contacto"]').fancybox();
 });
 
 
