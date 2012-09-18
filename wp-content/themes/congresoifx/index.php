@@ -4,7 +4,7 @@
 	<div id="slides">
 		<div class="slides_container">
 		<?php
-		$args = array( 'posts_per_page ' => -1, 'orderby' => 'menu_order', 'order' => 'ASC', 'post_type' => 'slide' );
+		$args = array( 'posts_per_page' => -1, 'orderby' => 'menu_order', 'order' => 'ASC', 'post_type' => 'slide' );
 		$query_slider = new WP_Query($args);
 		while ( $query_slider->have_posts() ) : $query_slider->the_post();
 			$slide_in = get_post_meta( get_the_ID(), '_slide_in', true );

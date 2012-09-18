@@ -13,7 +13,7 @@ get_header(); ?>
 
 
 	<?php
-		$args = array( 'posts_per_page ' => -1, 'orderby' => 'menu_order', 'order' => 'ASC', 'post_type' => 'page', 'post_parent' => get_the_ID() );
+		$args = array( 'posts_per_page' => -1, 'orderby' => 'menu_order', 'order' => 'ASC', 'post_type' => 'page', 'post_parent' => get_the_ID() );
 		$query_packages = new WP_Query($args);
 		while ( $query_packages->have_posts() ) : $query_packages->the_post();
 	?>
